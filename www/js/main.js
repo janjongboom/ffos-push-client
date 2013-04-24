@@ -21,14 +21,9 @@ require.config({
     'js/mobile-nav.js',
     
     // services
-    'js/services/database.js',
-    'js/services/dates.js',
     
     // controllers
-    'js/controllers/list.js',
-    'js/controllers/add.js',
-    'js/controllers/detail.js',
-    'js/controllers/edit.js'
+    'js/controllers/index.js'
   ], function(angular) {
     angular.bootstrap(document, ['app']);
   });

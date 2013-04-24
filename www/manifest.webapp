@@ -1,7 +1,7 @@
 {
   "version": "0.1",
-  "name": "My App",
-  "description": "Your new awesome Open Web App",
+  "name": "Push client",
+  "description": "OMG this is so awesome",
   "launch_path": "/index.html",
   "icons": {
     "16": "/img/icons/mortar-16.png",
@@ -9,24 +9,18 @@
     "128": "/img/icons/mortar-128.png"
   },
   "developer": {
-    "name": "Your Name",
-    "url": "http://yourawesomeapp.com"
+    "name": "Jan Jongboom",
+    "url": "https://github.com/janjongboom/ffos-push-client"
   },
   "installs_allowed_from": ["*"],
-  "appcache_path": "/manifest.appcache",
-  "locales": {
-    "es": {
-      "description": "Su nueva aplicación impresionante Open Web",
-      "developer": {
-        "url": "http://yourawesomeapp.com"
-      }
-    },
-    "it": {
-      "description": "Il vostro nuovo fantastico Open Web App",
-      "developer": {
-        "url": "http://yourawesomeapp.com"
-      }
+  "default_locale": "en",
+  "permissions": {
+    "push": { 
+      "description": "Receive notifications" 
     }
   },
-  "default_locale": "en"
+  "messages": [
+    { "push": "/" },
+    { "push-register": "/" }
+  ]
 }
